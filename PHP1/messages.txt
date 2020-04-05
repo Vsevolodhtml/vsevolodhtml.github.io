@@ -1,0 +1,4 @@
+﻿Всеволод;Чат готов к работе!
+Всеволод;<i>Привет!</i>
+Всеволод;<img src="https://html5meister.github.io/images/photo-1428836962997-9533e673a68f.jpg">
+Сергей;<code>Привет!</code>
