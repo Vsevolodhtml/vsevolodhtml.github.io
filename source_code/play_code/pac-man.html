@@ -1,0 +1,107 @@
+
+<!doctype html>
+<html lang="en">
+    <head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Pac-man</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.elg.im/apple-touch-icon.png">
+        <link rel="manifest" href="https://cdn.elg.im/site.webmanifest">
+        <link rel="mask-icon" href="https://cdn.elg.im/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#ffc40d">
+        <meta name="theme-color" content="#ffffff">
+		<meta name="twitter:card" content="summary_large_image" />
+        <meta property="fb:admins" content="1160981952" />
+        <meta property="fb:app_id" content="2140740992815249" />
+        <meta property="og:image"  content="https://cdn.elg.im/pacman/google-pacman.png" />
+        <link href="https://cdn.elg.im/css/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=QrAMD0456ITgq1vx1UQNRNy2HqxIor4pGRSXm9k1YsbfYIFakGtpGEcbGlvk_VXF" charset="UTF-8"></script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-20764615-1"></script>
+<style>@font-face{font-family:'DOS';font-style:normal;font-weight:normal;font-display:swap;src:local('DOS'),url('https://cdn.elg.im/google1998/font/fixedsys500c.woff2') format('woff2'),url('https://cdn.elg.im/google1998/font/fixedsys500c.woff') format('woff'),url('https://cdn.elg.im/google1998/font/fixedsys500c.ttf') format('truetype'),url('https://cdn.elg.im/google1998/font/fixedsys500c.eot') format('embedded-opentype'),url('https://cdn.elg.im/google1998/font/fixedsys500c.svg') format('svg');}body{background-color:#000;font-family:DOS,Raleway,arial,sans-serif;margin:0;}#wrapper{text-align:center;}header{box-sizing:border-box;max-width:980px;width:fit-content;margin:auto;text-align:left;padding-left:1em;padding-right:1em;}header a{color:rgb(250,255,56);text-decoration:none}header>p{color:#fff;font-size:1.1em}.note{color:#627b7b;font-size:14px;}#lga{margin-top:-18px;}#hplogo{margin:auto;}#hplogo{background:black url(https://cdn.elg.im/pacman/pacman10-hp.2.png) 0 0 no-repeat;height:208px;width:484px;position:relative;-moz-user-select:-moz-none;-ms-user-select:none;-webkit-tap-highlight-color:transparent;-webkit-user-select:none;transform-origin:top;}#hplogo-l{background:#990;display:none;height:2px;left:177px;overflow:hidden;position:absolute;top:157px;width:200px}#hplogo-b{background:#ff0;height:8px;left:0;position:absolute;width:0}canvas{touch-action:none;outline-width:0px;}#sound{margin-top:15px;margin-right:30px;}#adBanner{padding-top:1em;margin:auto;width:728px;min-height:90px}#adRect{max-width:468px;width:100%;padding-top:0.5em;margin:auto;z-index:+1;min-height:90px}.thumbnails-468 .trc_spotlight_item{background:#f0f0f0 !important;}.trc-main-label span{font-family:DOS,Raleway,arial,sans-serif !important;}.trc-main-label .video-title{color:#e1e1e1 !important;}.trc-main-label .branding{color:#627b7b !important;}.thumbnails-468 .trc_spotlight_item{background:transparent !important;}@media(max-width:1024px){.ep-sidetools{top:65%;}}@media(max-width:765px){#sound{top:145px !important;}}@media(max-width:640px){header{width:100%}}@media(max-width:484px){#hplogo{transform-origin:left;}}@media(max-width:380px){#sound{top:175px !important;}}@media (hover:none) and (pointer:coarse) and (orientation:portrait){#hplogo{padding-bottom:calc(150px + (100vh - 4/3*100vw)/7);}}</style>
+<script>var w = 484;var h = 208;window.scrollTo(0, 0);var scale = Math.min(window.innerWidth / w, window.innerHeight / h);var newScale = (window.innerWidth<1024.1)? scale:scale*0.6; var padding = Math.ceil((window.innerWidth / scale - w) / 2) + 'px';var sound;</script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-20764615-1');
+</script>
+<script>
+    window._taboola = window._taboola || [];
+    _taboola.push({article:'auto'});
+    !function (e, f, u, i) {
+        if (!document.getElementById(i)){
+            e.async = 1;
+            e.src = u;
+            e.id = i;
+            f.parentNode.insertBefore(e, f);
+        }
+    }(document.createElement('script'),
+        document.getElementsByTagName('script')[0],
+        '//cdn.taboola.com/libtrc/iploc-network/loader.js',
+        'tb_loader_script');
+    if(window.performance && typeof window.performance.mark == 'function')
+    {window.performance.mark('tbl_ic');}
+
+    var currPage = window.location.pathname.split("/")[1];
+</script>
+</head>
+<body>
+<div id="wrapper">
+    <header>
+        <h1>PAC-MAN, чтобы играть нажимайте на стрелочки</h1>
+    </header>
+    <div id="lga">
+        <div id="hplogo" title="PAC-MAN's 30th Birthday! Doodle with PAC-MAN™ & ©1980 NAMCO BANDAI Games Inc.">
+            <div id="hplogo-l">
+                <div id="hplogo-b"></div>
+            </div>
+        </div>
+<script>var game = document.getElementById('hplogo');game.style.transform = 'scale(' + newScale + ')';game.style.paddingLeft = padding;game.style.paddingRight = padding;</script>
+    </div>
+<div class="ep-sidetools ep-lefttools">
+</div>
+<div class="ep-sidetools ep-righttools">
+</div>
+    <div id="adRect">
+        <div id="taboola-streamthumbnails" class="thumbnails-468"></div>
+        <script type="text/javascript">
+            isMobile = !!navigator.userAgent.match(/AppleWebKit.*Mobile.*/) && !!navigator.userAgent.match(/AppleWebKit/);
+            if(isMobile){//mobile browser
+                window._taboola = window._taboola || [];
+                _taboola.push({
+                    mode: 'thumbnails-1X1stream',
+                    container: 'taboola-streamthumbnails',
+                    placement: currPage+"-468",
+                    target_type: 'mix'
+                });
+            }
+        </script>
+    </div>
+    <div id="adBanner">
+        <div id="taboola-below-article-thumbnails" class="thumbnails-728"></div>
+        <script type="text/javascript">
+            if(isMobile){//mobile browser
+                document.getElementById("adBanner").style.display = "none";}
+            else{//desktop browser
+                window._taboola = window._taboola || [];
+                _taboola.push({
+                    mode: 'thumbnails-a',
+                    container: 'taboola-below-article-thumbnails',
+                    placement: currPage+"-728",
+                    target_type: 'mix'
+                });
+                document.getElementById("adRect").style.display = "none";
+            }
+        </script>
+    </div>
+</div>
+<script>document.getElementById("adRect").style.marginTop=document.getElementById("adBanner").style.marginTop=document.getElementById("hplogo").style.paddingBottom+(newScale-1)*208+"px";window.onresize=function(){window.scrollTo(0,0);scale=Math.min(window.innerWidth/w,window.innerHeight/h);newScale=window.innerWidth<1024.01?scale:scale*0.6;game.style.transform='scale('+newScale+')';padding=Math.ceil((window.innerWidth/scale-w)/2)+'px';game.style.paddingLeft=padding;game.style.paddingRight=padding;sound=document.getElementById("sound");sound.style.transform='scale('+newScale+')';sound.style.right=(window.innerWidth-484*newScale)/2+20+"px";document.getElementById("adRect").style.marginTop=document.getElementById("adBanner").style.marginTop=document.getElementById("hplogo").style.paddingBottom+(newScale-1)*208+"px"};document.getElementById("hplogo").addEventListener('touchstart',function(){});</script>
+<script>(function(){window.google||(window.google={});google.doodle||(google.doodle={});function g(a){google.doodle.pmlInstalled||(google.doodle.pmlInstalled=!0,a||(document.getElementById("hplogo").style.background="black",window.setTimeout(function(){var a=document.getElementById("hplogo-l");a&&(a.style.display="block")},400)),a=document.createElement("script"),a.type="text/javascript",a.src="https://cdn.elg.im/pacman/js/pacman10-hp.11.js",(document.getElementById("xjsc")||document.body).appendChild(a))}function h(){for(var a=document.forms,f=["f","gs","tsf","gbqf"],b=0,d;d=f[b++];)if(d=a[d])return d;return null}function k(){var a=h();a&&a.btnI&&(a.btnI.onclick=function(){"undefined"!=typeof google.pacman?google.pacman.insertCoin():(google.doodle.pacManSound=!0,g(!1));return!1})}google.doodle.pmlLoaded||(google.doodle.pmlLoaded=!0,window.setTimeout(function(){var a=h();a&&a.q&&""==a.q.value&&g(!0)},5E3),google.doodle.pacManSound=!0,g(!1),google.dstr&&google.dstr.push(function(){google.pacman&&google.pacman.destroy();if(google.doodle.pmlInstalled){for(var a=(document.getElementById("xjsc")||document.body).getElementsByTagName("script"),f=0,b;b=a[f++];)-1!=b.src.indexOf("js/pacman10-hp.11.js")&&b&&b.parentNode&&b.parentNode.removeChild(b);google.doodle.pmlInstalled=!1}}));google.doodle.pacManQuery=function(){window.top.location.href="/pacman/"}}).call(this);</script>
+<script async defer src="https://cdn.elg.im/js/script.js"></script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5adc4100e40b3cfe"></script>
+<script type="text/javascript">
+    window._taboola = window._taboola || [];
+    _taboola.push({flush: true});
+</script>
+    </body>
+</html>

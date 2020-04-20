@@ -1,0 +1,16 @@
+html {
+	background-image: repeating-linear-gradient(to bottom,
+      rgb(26,198,204),
+      rgb(26,198,204) 7%,
+      rgb(100,100,100) 10%);
+}
+
+body {
+	border: 2px solid gray;
+	margin: 8%;
+	padding: 10px;
+}
+h1 {
+	font-size: 30px;
+	margin-left: 0px;
+}
