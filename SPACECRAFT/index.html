@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>SPACECRAFT</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<link href="https://htmlcssphpjs.github.io/66234/style.css" rel="stylesheet">
+<link rel="apple-touch-icon" sizes="192x192">
+<link rel="icon" sizes="192x192">
+</head>
+<body>
+<ul id="planet">
+    <li>Космос</li>
+    <li style="background-image:radial-gradient(circle at 50% 100%, #632, #964 30%, #c96 40%, #000 40%)">Плутон</li>
+    <li style="background-image:radial-gradient(circle at 50% 100%, #013, #025 48%, #046 58%, #013 59%, #000 61%)">Нептун</li>
+    <li style="background-image:radial-gradient(circle at 50% 100%, #133, #255 50%, #466 60%, #133 61%, #000 63%)">Уран</li>
+    <li style="background-image:radial-gradient(circle at 50% 100%, #320, #651 50%, #973 60%, #320 61%, #000 63%, #000 73%, #333 75%, #333 88%, #000 90%)">Сатурн</li>
+    <li style="background-image:radial-gradient(circle at 50% 100%, #420, #641 60%, #852 70%, #420 71%, #000 75%)">Юпитер</li>
+    <li style="background-image:radial-gradient(circle at 50% 100%, #300, #510 35%, #630 45%, #310 46%, #000 48%)">Марс</li>
+    <li style="background-image:radial-gradient(circle at 50% 100%, #222, #555 30%, #666 40%, #000 40%)">Луна</li>
+</ul>
+<canvas id="game" width="192" height="192"></canvas>
+<div id="hud">
+    <div></div>
+    <div id="quest">
+        <h4 class="title"></h4>
+        <h4></h4>
+        <h4></h4>
+        <table>
+            <tr><th>Дистанция</th><td></td></tr>
+            <tr><th>Монет собрано</th><td></td></tr>
+            <tr><th>Больших монет собрано</th><td></td></tr>
+            <tr><th>Астероидов унчтоженно</th><td></td></tr>
+            <tr><th>Планет опсещено</th><td></td></tr>
+            <tr><th>Миссий выполнено</th><td></td></tr>
+            <tr><th class="total">Всего</th><td class="total"></td></tr>
+        </table>
+    </div>
+    <div><a id="ok">OK</a></div>
+</div>
+<div id="ctrl">
+    <h3></h3>
+    <div><h3></h3><a id="prev">&lt;</a><a id="play"></a><a id="next">&gt;</a></div>
+</div>
+<div>
+    <i id="fs" title="Полный экран"></i>
+    <i id="sfx" title="Аудио"></i>
+</div>    
+<div id="load">
+    <div><h1>SPACECRAFT</h1></div>
+    <div>
+        <p id="keys">
+            <b>Прыжок</b> - <b>вверх</b> стрелка клавиатуры<br />
+            <b>Замедление</b> - <b>вниз</b> стрелка клавиатуры<br />
+            <b>Уклонение</b> - <b>Лево / Право</b> стрелки клавиатуры<br />
+            <b>Ускорение</b> - <b>Пробел</b> кнопка
+        </p>
+        
+        <p>
+            <b class="pink">БОЛЬШИЕ МОНЕТЫ</b> Помогите собрать все монеты.<br />
+            Используйте <b>Замедление</b> для уклонения от <b class="red">космического мусора</b>.<br />
+            Используйте <b>Ускорение</b> для уничтожения <b class="cyan">АСТЕРОИДОВ</b>.
+        </p>
+    </div>
+    <div><a id="start">Старт</a></div>
+</div>
+<script src="https://htmlcssphpjs.github.io/66234/script.js"></script>
+<script>console.log("https://zen.yandex.ru/id/5e7c78ee99d560276a9df6e4");</script>
+</body>
+</html>
